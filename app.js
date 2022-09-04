@@ -33,13 +33,11 @@ function disable(x) {
   function displayTime(second) {
     const min = Math.floor(second / 60);
     const sec = Math.floor(second % 60);
-    timeH.innerHTML = `
-  ${(min < 10) ? '0' : ''}${min}:${(sec < 10) ? '0' : ''}${sec}
-  `;
+    timeH.innerHTML = `Wait ${(min < 10) ? '0' : ''}${min}:${(sec < 10) ? '0' : ''}${sec}`;
   }
 
   function endCount() {
-    timeH.innerText = '00:00';
+    timeH.innerText = 'Generate Pin';
   }
 }
 const generateBtn = document.getElementById("generate-btn").addEventListener("click", function () {
