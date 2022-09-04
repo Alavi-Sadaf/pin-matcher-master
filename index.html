@@ -16,7 +16,7 @@
       <div class="col-md-6">
         <div class="pin-generator half-width">
           <h6 id="countdown">12345</h6>
-          <input id="generated-number" class="form-control" type="text">
+          <input id="generated-numbers" class="form-control" type="text">
           <button onclick="disable(this)" id="generate-btn">Generate Pin
             <div id="timer">
               00:00
@@ -26,7 +26,7 @@
       </div>
       <div class="col-md-6">
         <div class="input-section half-width">
-          <input class="form-control" type="text">
+          <input id="dialed-numbers" class="form-control" type="text">
           <div class="numbers">
             <div class="calc-body">
               <div class="calc-button-row">
@@ -45,22 +45,22 @@
                 <div class="button">3</div>
               </div>
               <div class="calc-button-row">
-                <div class="button">&lt;</div>
+                <div id="backspace" class="operator">&lt;</div>
                 <div class="button">0</div>
-                <div class="button">C</div>
+                <div id="clear" class="operator">C</div>
               </div>
               <div>
-                <button type="submit" class="submit-btn">Submit</button>
-                <p class="action-left">3 try left</p>
+                <button type="submit" id="submit-btn">Submit</button>
+                <p class="action-left"><span id="tryleft">3</span> try left</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="notify-section">
-        <p class="notify">❌ Pin Didn't Match, Please try again</p>
-        <p class="notify">✅ Pin Matched... Secret door is opening for you</p>
-      </div>
+      <div id="notify-section">
+        <p id="unmatched" class="notify">❌ Pin Didn't Match, Please try again</p>
+        <p id="matched" class="notify">✅ Pin Matched... Secret door is opening for you</p>
+    </div>
     </div>
     <script src="app.js"></script>
 </body>
