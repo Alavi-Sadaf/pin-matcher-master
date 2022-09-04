@@ -13,7 +13,7 @@
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-5">
         <div class="pin-generator half-width">
           <input id="generated-numbers" class="form-control" type="text">
           <button onclick="disable(this)" id="generate-btn">Generate Pin
@@ -23,7 +23,13 @@
           </button>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-2">
+        <div id="notify-section">
+          <p id="unmatched" class="notify">❌ Pin Didn't Match, Please try again</p>
+          <p id="matched" class="notify">✅ Pin Matched... Secret door is opening for you</p>
+        </div>
+      </div>
+      <div class="col-md-5">
         <div class="input-section half-width">
           <input id="dialed-numbers" class="form-control" type="text">
           <div class="numbers">
@@ -55,10 +61,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div id="notify-section">
-        <p id="unmatched" class="notify">❌ Pin Didn't Match, Please try again</p>
-        <p id="matched" class="notify">✅ Pin Matched... Secret door is opening for you</p>
       </div>
     </div>
     <script src="app.js"></script>

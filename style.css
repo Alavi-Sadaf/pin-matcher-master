@@ -122,17 +122,16 @@ width: 100%;
   color: #fff;
   text-align: center;
   margin: 0 auto;
-  /* background: black; */
   margin-top: 20px;
   border-radius: 15px;
   padding: 5px 20px;
   display: none;
 }
 #notify-section{
-  width: 20%;
+  width: 100%;
   margin: 0px auto;
   z-index: 1;
-  /* display: none; */
+  /* display: none;  */
 }
 .action-left {
   color: #FF3C5F;
