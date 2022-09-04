@@ -110,11 +110,19 @@ width: 100%;
   color: #fff;
 }
 
+#matched {
+  background: green;
+}
+
+#unmatched {
+  background: red;
+}
+
 .notify {
   color: #fff;
   text-align: center;
   margin: 0 auto;
-  background: #222436;
+  /* background: black; */
   margin-top: 20px;
   border-radius: 15px;
   padding: 5px 20px;
@@ -122,7 +130,8 @@ width: 100%;
 }
 #notify-section{
   width: 35%;
-  margin: 0 auto;
+  margin: -300px auto;
+  z-index: 1;
 }
 .action-left {
   color: #FF3C5F;
