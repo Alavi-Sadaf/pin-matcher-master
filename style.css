@@ -129,9 +129,10 @@ width: 100%;
   display: none;
 }
 #notify-section{
-  width: 35%;
-  margin: -300px auto;
+  width: 20%;
+  margin: 0px auto;
   z-index: 1;
+  /* display: none; */
 }
 .action-left {
   color: #FF3C5F;
